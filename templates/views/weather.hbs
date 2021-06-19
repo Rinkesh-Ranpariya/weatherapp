@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{>header}}
+  </head>
+  <body>
+    <!-- come in public temple jsn -->
+
+    {{>navbar}}
+    
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+
+          <div class="main_content">
+            <form class="temp_form">
+              <input type="text" id="CityName" placeholder="Enter Your City Name" autocomplete="off">
+              <input type="submit" value="search" id="submitBtn">
+            </form>
+          </div>
+
+          <div class="tempInformation">
+            <div class="top_layer">
+              <p id="day">tue</p>
+              <p id="today_data">13 oct</p>
+            </div>
+            <div class="main_layer">
+              <p id="city_name">Please Enter City Name</p>
+              <div class="middle_layer data_hide">
+                <p class="temp"><span id="acTemp">0</span>&deg;C</p>
+                <p id="temp_status ">
+                  <span id="lol">
+                    <i class="fas fa-cloud"></i>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    {{>footer}}
+
+    {{>scripttag}}
+    <script src="js/main.js"></script>
+  </body>
+</html>

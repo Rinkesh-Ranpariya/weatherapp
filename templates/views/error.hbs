@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{>header}}
+  </head>
+  <body>
+    <!-- come in public temple jsn -->
+
+    {{>navbar}}
+    
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+            <div class="col-md-12 col-12 main_header_left align-items-center">
+              <figure class="errorimg">
+                <img
+                  src="images/404error.png"
+                  alt=""
+                  class="img-fluid"
+                  title="rinkesh"
+                />
+              </figure>
+              {{!-- <p>Welcome to weather app</p> --}}
+              <h1>
+                {{errormsg}}
+              </h1>
+              <a href="/"><button>Go Back</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    {{>footer}}
+
+    {{>scripttag}}
+  </body>
+</html>
